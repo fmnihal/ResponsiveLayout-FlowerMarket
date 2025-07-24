@@ -24,6 +24,7 @@ nav{
     display: flex;
     justify-content: space-between;
     height: 71px;
+    margin-bottom: 200px;
 }
 nav a{
     text-decoration: none;
@@ -43,9 +44,17 @@ nav a{
 }
 h1{
     font-size: 65px;
+    margin-bottom: 13px;
 }
 h2{
     font-size: 50px;
+    margin-bottom: 20px;
+}
+p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: gray;
 }
 
 .banner{
@@ -55,36 +64,49 @@ h2{
 .banner-title-orange, .plants-title-orange, .latest-title-orange{
     color: #E95A08;
 }
-p {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    /* font-weight: 50%; */
-    font-style: normal;
-    /* color: (#000000, 0.50);    */
-    color: gray;
-}
 
+.plants{
+    margin: 100px auto;
+}
 .plants-text{
-    margin: 16px 0;
+    margin-bottom: 49px;
 }
-.plants-card-container{
-    margin-bottom: 30px;
-}
+/* .plants-card-container{} */
 .plants-card-container1, .plants-card-container2{
     /* display: flex;
     justify-content: space-around; */
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    margin-bottom: 30px;
+}
+.plants-card-name-price{
+    text-align: center;
+}
+.plants-card-name p{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+}
+.plants-card-price p{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #000000;
 }
 .plants-card-btn-add2cart{
     height: 50px;
     width: 270px;
     color: white;
     font-size: 16px;
+    font-family: "Inter", sans-serif;
     background-color: #E95A08;
     border-color: #E95A08;
 }
 
+.lover{
+    margin: 100px auto;
+}
 .lover-container{
     display: flex;
     justify-content: space-between;
@@ -106,6 +128,9 @@ p {
     color: gray;
 }
 
+.latest{
+    margin: 100px auto;
+}
 .latest-title{
     text-align: center;
 }
@@ -115,9 +140,14 @@ p {
 }
 
 .deals{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     /* justify-content: space-between; */
+    grid-template-areas:
+    "deal-bloom-ana deal-zabo-container deal-zabo-container"
+    ;
     gap: 28px;
+    margin: 100px auto;
 }
 .deal-bloom-ana p{
     font-size: 20px;
@@ -152,6 +182,9 @@ p {
 .join{
     background-image: url('./assets/news-letter-bg.png');
     height: 533px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
 }
 .join-container{
     text-align: center;
@@ -159,6 +192,25 @@ p {
 }
 .join-container h2{
     color: white;
+}
+.join-newsletter{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 830px;
+}
+.join-input{
+    height: 88%;
+    width: 644px;
+}
+.join-btn{
+    height: 100%;
+    width: 186px;
+    color: white;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    background-color: #E95A08;
+    border-color: #E95A08;
 }
 
 .footer{
