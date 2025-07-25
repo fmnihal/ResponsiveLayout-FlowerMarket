@@ -311,10 +311,14 @@ p {
 }
 
 
+/* ////////////////////////////////////////// */
 @media screen and (max-width: 394px) {
 
 header{
     max-width: 393px;
+}
+.iphone-nav-bar{
+    display: flex;
 }
 .nav{
 justify-content: space-between;
@@ -330,9 +334,9 @@ justify-content: space-between;
     max-width: 393px;
     margin: 0 auto;
 }
-#home, #shop, #about{
+#home a, #shop a, #about a{
     display: none;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 h1, h2{
@@ -344,6 +348,7 @@ p{
 
 
 .banner{
+    display: flex;
     flex-direction: column-reverse;
     width: 430px;
     margin: 0 auto;
@@ -482,6 +487,7 @@ p{
     flex-direction: column;
     width: 361px;
     height: 581px;
+    margin: 0 16px;
 }
 .deal-bloom-ana{
     width: 100%;
@@ -501,20 +507,29 @@ p{
 }
 .deal-bloom-container{
     background-image: url('./assets/deal-bloom.png');
-    height: 172px;
+    height: 184px;
+    width: 361px;
     margin-bottom: 20px;
     border-radius: 22px;
 }
 .deal-ana-container{
     background-image: url('./assets/deal-ana.png');
-    height: 172px;
+    height: 184px;
+    width: 361px;
     margin-bottom: 0px;
     border-radius: 22px;
 }
 .deal-zabo-container{
     background-image: url('./assets/deal-zabo.png');
-    height: 172px;
+    height: 184px;
+    width: 361px;
     border-radius: 22px;
+    display: flex;
+    justify-content: center;
+}
+.deal-ana-text, .deal-bloom-text, .deal-zabo-text{
+    width: 270px;
+    height: 77px;
 }
 .deal-zabo p{
     font-size: 40px;
@@ -535,6 +550,7 @@ p{
     background-image: url('./assets/news-letter-bg.png');
     width: 100%;
     height: 276px;
+    width: 393px;
 }
 .join-container{
     text-align: center;
