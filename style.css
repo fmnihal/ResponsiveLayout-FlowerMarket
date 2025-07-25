@@ -488,6 +488,9 @@ p{
     display: flex;
     flex-direction: column;
 }
+.deal-bloom{
+    display: block;
+}
 .deal-bloom-ana p{
     font-size: 20px;
     color: white;
@@ -541,6 +544,9 @@ p{
 .join-title{
     margin-bottom: 23px;
 }
+.join-title h2{
+    font-size: 20px;
+}
 .join-container h2{
     color: white;
 }
@@ -572,8 +578,11 @@ p{
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 17px;
 }
-
+.footer-link-1, footer-link-2, footer-link-3{
+    display: block;
+}
 .footer-link-1 a, .footer-link-2 a{
     text-decoration: none;
     color: gray;
@@ -590,5 +599,8 @@ p{
     text-decoration: none;
 }
 
+body{
+    background-color: aqua;
+}
 
 }
